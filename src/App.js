@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       {/* <EditProfile /> */}
-      {/* <Message /> */}
+      <Message />
       {/* <Reviews /> */}
       {/* <RatePlace /> */}
       {/* <Visit /> */}

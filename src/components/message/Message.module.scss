@@ -119,12 +119,23 @@
     }
 }
 
-@media screen and(max-width: 420px){
+@media screen and(max-width: 625px){
     .message{
 
-        &__close{
-            display: none;
+
+        &__title{
+            margin-top: 109px;
         }
+
+        &__close{
+            right: 16px;
+            top: 29px;
+        }
+    }
+}
+
+@media screen and(max-width: 490px){
+    .message{
 
         &__title{
             font-size: 16px;
@@ -139,5 +150,15 @@
 @media screen and(max-width: 420px){
     .message{
         padding: 0px 34px;
+
+        &__textarea{
+            height: 324px;
+        }
+    }
+}
+
+@media screen and(max-width: 380px){
+    .message{
+        padding: 0px 24px;
     }
 }
