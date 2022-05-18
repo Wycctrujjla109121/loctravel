@@ -14,7 +14,7 @@ function App() {
       {/* <Message /> */}
       {/* <Reviews /> */}
       {/* <RatePlace /> */}
-      <Visit />
+      {/* <Visit /> */}
     </div>
   );
 }

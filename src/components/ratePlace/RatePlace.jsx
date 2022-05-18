@@ -6,27 +6,27 @@ import s from './RatePlace.module.scss'
 const RatePlace = () => {
     const [rates, setRates] = useState([
         {
-            id: 1,
+            id: 0,
             number: '1',
             active: false
         },
         {
-            id: 2,
+            id: 1,
             number: '2',
             active: false
         },
         {
-            id: 3,
+            id: 2,
             number: '3',
             active: false
         },
         {
-            id: 4,
+            id: 3,
             number: '4',
             active: false
         },
         {
-            id: 5,
+            id: 4,
             number: '5',
             active: false
         }
@@ -34,9 +34,7 @@ const RatePlace = () => {
 
     const clickRate = index => {
         setRates(rates.map((rate, i) => {
-            console.log(index.target.firstChild.nodeValue)
-            const currentIndex = index.target.firstChild.nodeValue - 1
-            if (currentIndex === i) {
+            if (index  === i) {
                 rate.active = !rate.active
             }
             else {
@@ -50,7 +48,7 @@ const RatePlace = () => {
     const result = rates.map((current, index) => {
         return (
             <p className={current.active ? s.number + ' ' + s.number__active : s.number}
-                onClick={clickRate}
+                onClick={() => clickRate(current.id)}
                 key={index}>{current.number}</p>
         )
     })

@@ -35,7 +35,7 @@ const Grid = () => {
 
     const infoGid = info.map((current, index) => {
         return (
-            <div className={s.grid__info}>
+            <div className={s.grid__info} key={index}>
                 <img className={s.grid__img} src={current.img} alt="" />
                 <p className={s.grid__name}>{current.name}</p>
                 <p className={s.grid__rating}>{current.rating}</p>
