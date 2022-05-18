@@ -13,7 +13,6 @@ import s from './Info.module.scss'
 const Info = () => {
     return (
         <div className={s.info}>
-
             <Name />
 
             <Lastname />

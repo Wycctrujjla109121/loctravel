@@ -69,3 +69,14 @@
         box-sizing: border-box;
     }
 }
+
+@media screen and (max-width: 1185px){
+    .description{
+        margin: 41px 0px
+    }
+}
+@media screen and (max-width: 768px){
+    .description{
+        margin: 17px 0px
+    }
+}
