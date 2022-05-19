@@ -19,6 +19,8 @@
 
         border-radius: 10px;
         border: unset;
+
+        cursor: pointer;
     }
 
     &__cancel {
@@ -31,5 +33,7 @@
 
         color: #000000;
         text-decoration-line: underline;
+
+        cursor: pointer;
     }
 }
